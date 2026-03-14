@@ -567,9 +567,10 @@ except Exception as e:
                         self.scriptRunning = false;
                     } else {
                         console.error('Ошибка выполнения генератора:', error);
-                        throw error;
+                        
                         // Показываем пользователю:
                         alert("Ошибка выполнения генератора:", error);
+                        throw error;
                     }
                 }
             };
